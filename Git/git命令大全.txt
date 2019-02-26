@@ -25,18 +25,6 @@
             git log -p：显示每次提交所引入的差异（可以跟着-2，即每次显示最近两次的提交）
             git log --stat：查看每个提交的简要统计信息。
 
-
-
-
-
-
-
-
-
-
-
-
-
 版本后退:
 	git reset --hard 索引值  
 	git reset -hard HEAD^  #一个^后退一个
@@ -50,7 +38,9 @@
 	  git remote add -f alias repository
 	  git remote -v：显示Git存储的每个远程仓库对应的URL
           git remote update
-推送：    git push+别名+分支名
+          git remote rm:删除给定的远程版本库以及关联的远程追踪分支
+          git branch -r -d 别名/分支名：删除一个远程跟踪分支。
+推送：    git push+别名/分支名
 
 克隆：
     git clone+远程库地址
