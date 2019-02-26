@@ -1,0 +1,4 @@
+Alt+7:查看类的所有方法。
+查找接口的实现类：ctrl+alt+B
+查看类或接口的继承关系：ctrl + h
+try/catch的快捷键:ctrl+alt+t 

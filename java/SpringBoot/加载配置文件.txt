@@ -1,0 +1,18 @@
+（1）加载其他配置文件的{name}.properties可以使用jvm启动参数 --spring.config.name={name}文件的扩展名可以省略。
+（2）加载其他配置文件的{name}.properties可以使用jvm启动参数 --spring.config.location=classpath:/config/{name}.properties
+
+()spring.profiles.active={name}
+
+
+@PropertySource("classpath:{name}.properties")
+@PropertySource("file:filePath")
+@PropertySources()
+
+
+@ConfigurationProperties(prefix="")
+
+
+（3）配置文件支持集合和数组的配置方式：name[index]=value
+（4）实行EnvironmentPostProcessor接口，并在META-INF/spring.factories注册 （重写postProcessEnvironment方法，并用）
+（5）SpringApplication.setAdditionalProfiles("{name}")   -- application-{name}.properties
+

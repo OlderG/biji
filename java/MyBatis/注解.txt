@@ -1,0 +1,14 @@
+@Param：被该注解修饰的变量会作为Map中的key。
+@Select
+@Results：对应于resultMap,有唯一标识id
+@Result：对应于result
+@ResultMap:可以共享@Results
+@Insert：
+@Options：
+@SelectKey
+@Update
+@Delete
+@SelectProvider
+@InsertProvider
+@UpdateProvider
+@DeleteProvider
